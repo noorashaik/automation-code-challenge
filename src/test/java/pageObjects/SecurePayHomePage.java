@@ -16,7 +16,9 @@ public class SecurePayHomePage {
 		PageFactory.initElements(rdriver, this);
 		
 	}
-	@FindBy (xpath ="//link[@href=\"/help-and-support/contact-sales\"]")	
+	@FindBy (xpath ="//a//span[text()='Contact us']")	
+
+
 	WebElement contactUs_link;	
 
 	public void ClickOnContactUsLink() {

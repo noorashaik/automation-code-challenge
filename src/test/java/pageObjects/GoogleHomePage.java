@@ -19,7 +19,10 @@ public GoogleHomePage(WebDriver rdriver) {
 @FindBy (name = "q")
 WebElement search;
 
-@FindBy (xpath ="//link[@href=\"http://www.securepay.com.au/\"]")
+@FindBy (xpath ="//a//span[contains(text(),'SecurePay | Trusted Online Payment Gateway')]")
+
+
+
 WebElement securePayLink;
 
 public void search() {
